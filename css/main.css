@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -28,14 +26,12 @@
         "input"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 64px auto auto 1fr 64px;
+    grid-template-rows: 64px auto auto 1fr auto;
     min-height: 100vh;
 }
 
 .header {
-    width: 100%;
     height: 64px;
-    padding: 0 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     grid-area: header;
     justify-content: space-between;
@@ -52,14 +48,6 @@
 
 .header_link {
     text-decoration: none;
-}
-
-.header_text:hover {
-    border-bottom: 0.5px solid rgba(63, 0, 63, 0.8);
-    transition: all 0.5s ease-in-out;
-}
-
-.header_text {
     align-self: center;
     margin: 0 16px;
 }
@@ -69,6 +57,7 @@
 }
 
 .select-language-button {  
+    margin: 16px;
     padding: 0.3rem 1.3rem;
     background-image: linear-gradient(#f9d423 0%, #ff4e50 100%);
     border: 2px solid rgba(255, 78, 80, 0.6);
@@ -79,7 +68,7 @@
 .button_translate:hover {
     box-shadow: 0 0 6px rgba(63, 0, 63, 0.4);
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .indicator_img {
@@ -108,11 +97,13 @@
 }
 
 .input_field {
+    min-height: 240px;
     background: transparent;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     outline: none;
+    resize: none;
 }
 
 .input_field::placeholder,
@@ -132,10 +123,26 @@
 }
 
 .footer {
-    width: 100%;
     padding: 0 16px;
     grid-area: footer;
     border-top: 1px solid rgba(255, 255, 255, 0.6);
+    flex-direction: column;
+}
+
+.footer_nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer_link {
+    text-decoration: none;
+    align-self: center;
+    margin: 16px;
+}
+
+.copyright {
+    align-self: center;
+    margin-bottom: 16px;
 }
 
 .font-family {
@@ -150,10 +157,18 @@
     font-size: 18px;
 }
 
-.font_color {
+.font-color {
     color: rgba(63, 0, 63, 1);
 }
 
-.font_color_hover:hover {
+.font-color_hover:hover {
+    color: rgba(63, 0, 63, 0.8);
+}
+
+.font-color_footer {
+    color: rgba(63, 0, 63, 0.5);
+}
+
+.font-color_footer_hover:hover {
     color: rgba(63, 0, 63, 0.8);
 }
