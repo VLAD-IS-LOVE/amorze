@@ -10,8 +10,31 @@
     <title>Amorze</title>
 </head>
 <body>
-    <header class="header">
-        <img src="files/images/logo.svg" alt="">
-    </header>    
+    <!-- header -->
+    <header class="header display_flex font-size_m ">
+        <a href="#" class="logo header_link display_flex">
+            <img src="files/images/logo.svg" alt="">           
+            <span class="header_text font_color font_color_hover">Amorze</span>
+        </a>
+        <nav class="nav display_flex">
+            <a href="#" class="alphabet header_link header_text font_color font_color_hover">Alphabet</a>
+            <a href="#" class="about header_link header_text font_color font_color_hover">About</a>
+            <button class="select-language-button font-family font-size_m font_color font_color_hover">En</button>  
+        </nav>
+    </header>
+    <!-- indicator -->
+    <div class="indicator">
+        <img src="files/images/indicator.svg" alt="indicator_img" class="indicator_img">
+    </div>
+    <!-- morse-code -->
+    <div class="morse-code font-size_s font_color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, necessitatibus?</div>
+    <!-- input -->
+    <form class="input display_flex">
+        <textarea type="text" class="input_field font-family font-size_s font_color" name="input"
+                  placeholder="Type the text here"></textarea>
+        <button class="button_translate font-family font-size_m font_color font_color_hover">Translate</button>
+    </form>
+    <!-- footer -->
+    <footer class="footer"></footer>    
 </body>
 </html>
