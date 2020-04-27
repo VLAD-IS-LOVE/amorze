@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="files/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="files/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/main.css">
 
-    <title>Amorze</title>
-</head>
-<body class="body display_grid body_grid font-family font-size_s">
-    <!-- header -->
-    <header class="header display_flex font-size_m ">
-        <a href="#" class="logo header_link display_flex">
-            <img src="files/images/logo.svg" alt="" class="logo_img">           
-            <span class="header_link font-color font-color_hover">Amorze</span>
-        </a>
-        <nav class="nav display_flex">
-            <a href="#" class="alphabet header_link font-color font-color_hover">Alphabet</a>
-            <a href="#" class="about header_link font-color font-color_hover">About</a>
-            <button class="select-language-button font-family font-size_m font-color font-color_hover">En</button>  
-        </nav>
-    </header>
-    <!-- indicator -->
-    <div class="indicator">
-        <img src="files/images/indicator.svg" alt="indicator_img" class="indicator_img">
-    </div>
-    <!-- morse-code -->
-    <div class="morse-code font-size_s font-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, necessitatibus?</div>
-    <!-- input -->
-    <form class="input display_flex">
-        <textarea type="text" class="input_field font-family font-size_s font-color" name="input"
-                  placeholder="Type the text here"></textarea>
-        <button class="button_translate font-family font-size_m font-color font-color_hover">Translate</button>
-    </form>
-    <!-- footer -->
-    <footer class="footer display_flex">
-        <div class="footer_nav display_flex">
-            <a href="#" class="footer_link font-color_footer font-color_footer_hover">Amorze</a>
-            <a href="#" class="footer_link font-color_footer font-color_footer_hover">Alphabet</a>
-            <a href="#" class="footer_link font-color_footer font-color_footer_hover">About</a>
+        <title>Amorze</title>
+    </head>
+    <!-- <body class="body display_grid body_grid font-family font-size_s">
+        
+        <header class="header display_flex font-size_m ">
+            <a href="#" class="logo header_link display_flex">
+                <img src="files/images/logo.svg" alt="" class="logo_img">           
+                <span class="header_link font-color font-color_hover">Amorze</span>
+            </a>
+            <nav class="nav display_flex">
+                <a href="#" class="alphabet header_link font-color font-color_hover">Alphabet</a>
+                <a href="#" class="about header_link font-color font-color_hover">About</a>
+                <button class="select-language-button font-family font-size_m font-color font-color_hover">En</button>  
+            </nav>
+        </header>
+        
+        <div class="indicator">
+            <img src="files/images/indicator.svg" alt="indicator_img" class="indicator_img">
         </div>
-        <span class="copyright font-color_footer">&copy; 2020 Amorze. All Right Reserved</span>
-    </footer>    
-</body>
+        
+        <div class="morse-code font-size_s font-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, necessitatibus?</div>
+        
+        <form class="input display_flex">
+            <textarea type="text" class="input_field font-family font-size_s font-color" name="input"
+                    placeholder="Type the text here"></textarea>
+            <button class="button_translate font-family font-size_m font-color font-color_hover">Translate</button>
+        </form>
+        
+        <footer class="footer display_flex">
+            <div class="footer_nav display_flex">
+                <a href="#" class="footer_link font-color_footer font-color_footer_hover">Amorze</a>
+                <a href="#" class="footer_link font-color_footer font-color_footer_hover">Alphabet</a>
+                <a href="#" class="footer_link font-color_footer font-color_footer_hover">About</a>
+            </div>
+            <span class="copyright font-color_footer">&copy; 2020 Amorze. All Right Reserved</span>
+        </footer>    
+    </body> -->
+
+    <body class="body-wrapper display_grid font-color">
+        <header class="header-wrapper display_grid">
+            <a class="logo-wrapper  text-decor_none display_flex " href="#">
+                <img class="logo-img" src="files/images/logo.svg" alt="logo-img">
+                <span class="logo-title text-decor_none font-family font-color link-hover font-size_xl">Amorze</span>
+            </a>
+            <input class ="checkbox display_none" type="checkbox" name="checkbox" id="checkbox">
+            <label class="hamburger-button" for="checkbox">
+                <svg class="hamburger-img" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="1" x2="100%" y2="1" stroke-width="2"/>
+                    <line x1="0" y1="5" x2="100%" y2="5" stroke-width="2"/>
+                    <line x1="0" y1="9" x2="100%" y2="9" stroke-width="2"/>
+                </svg>
+            </label>
+            <ul class="header-menu display_none list-style_none">
+                <li class="header-menu-item header-menu-link"><a class="text-decor_none font-family font-color link-hover font-size_l" href="#">Alphabet</a></li>
+                <li class="header-menu-item header-menu-link"><a class="text-decor_none font-family font-color link-hover font-size_l" href="#">About</a></li>
+                <li class="header-menu-item header-menu-link"><a class="text-decor_none font-family font-color link-hover font-size_l" href="#">Contacts</a></li>
+                <li class="header-menu-item"><button class="button font-color font-size_l">En</button></li>
+            </ul>
+        </header>
+        <!--  -->
+        <div class="indicator">
+            <svg class="indicator-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
+                <style type="text/css">
+                    .indicator__bulb{fill:url(#indicator__bulb);stroke:#3F003F;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .indicator__contacts{fill:none;stroke:#3F003F;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .indicator__flare{fill:none;stroke:#3F003F;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .indicator__base{fill:url(#indicator__base);stroke:#3F003F;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                </style>
+                <linearGradient id="indicator__bulb_active" gradientUnits="userSpaceOnUse" x1="5" y1="8" x2="5" y2="1">
+                    <stop  offset="0" style="stop-color:#D4145A"/>
+                    <stop  offset="0.3869" style="stop-color:#ffac4e"/>
+                </linearGradient>
+                <linearGradient id="indicator__bulb" gradientUnits="userSpaceOnUse" x1="5" y1="8" x2="5" y2="1">
+                    <stop  offset="0" style="stop-color:#D4145A"/>
+                    <stop  offset="0.3869" style="stop-color:#FF4E50"/>
+                </linearGradient>
+                <path class="indicator__bulb" d="M2,4L2,4c0-1.7,1.3-3,3-3l0,0c1.7,0,3,1.3,3,3v0v4H2V4z"/>
+                <polyline class="indicator__contacts" points="3,10 3,6 4,6 5,7 3,7 "/>
+                <polyline class="indicator__contacts" points="7,10 7,6 5,6 6,7 7,7 "/>
+                <path class="indicator__flare" d="M3,3.5L3,3.5C3,2.7,3.7,2,4.5,2h0"/>
+                <linearGradient id="indicator__base" gradientUnits="userSpaceOnUse" x1="5" y1="9" x2="5" y2="8">
+                    <stop  offset="0.8291" style="stop-color:#D4145A"/>
+                    <stop  offset="1" style="stop-color:#FF4E50"/>
+                </linearGradient>
+                <rect x="1" y="8" class="indicator__base" width="8" height="1"/>
+            </svg>
+        </div>
+        <!--  -->
+        <div class="output-field display_flex">
+            <span class="char font-family">A</span>
+            <div class="char_value display_flex">
+                <svg class="dot" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50%" cy="50%" r="10%"/>
+                </svg>
+                <svg class="dash" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="20%" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+        <!--  -->
+        <form class="input-form display_flex" action="">
+            <textarea class="input-field font-color font-size_m" name="input-field" placeholder="Type the text here"></textarea>
+            <button class="button input-button font-color font-size_m">Start</button>
+        </form>
+        <!--  -->
+        <footer class="footer-wrapper display_flex">
+            <a class="footer-logo logo-wrapper text-decor_none display_flex" href="#">
+                <img class="logo-img" src="files/images/logo.svg" alt="logo-img">
+                <span class="footer-logo-title logo-title font-family font-color link-hover font-size_m">Amorze is a Morse Code indicator</span>
+            </a>
+            <div class="copyright display_flex font-family font-color font-size_s">
+                <span>&copy; 2020 Amorze. All Right Reserved</span>
+            </div>
+        </footer>  
+    </body>
 </html>
